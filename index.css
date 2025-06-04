@@ -76,8 +76,13 @@ footer span >a:hover{
   text-decoration: underline 0.5px;
 }
 /*team info styles */
-
+.team-schedule{
+  min-height: 800px;
+}
 /* team roster styles */
+.roster-wrapper{
+  min-height: 800px;
+}
 .roster-playercard{
   height: 80px;
   width: 90%;

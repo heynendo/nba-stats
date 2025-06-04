@@ -33,6 +33,7 @@
     max-width: 1600px;
     justify-self: center;
     justify-content: space-between;
+    min-height: 800px;
 }
 .player-stats div > h1{
     margin: 50px 0;
