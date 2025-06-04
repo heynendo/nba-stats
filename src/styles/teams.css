@@ -1,0 +1,178 @@
+.teams{
+    display: grid;
+    grid-template-columns: 1fr 10vw 1fr;
+    color: white;
+    width: 95%;
+    max-width: 1700px;
+    justify-self: center;
+    margin-bottom: 50px;
+}
+.teams .conference{
+    display: block;
+    justify-content: center;
+}
+.teams .conference > h1{
+    text-align: center;
+}
+.teams .west{
+    grid-column: 1 / 2;
+    justify-self: center;
+    width: 100%;
+}
+.teams .east{
+    grid-column: 3 / 4;
+    justify-self: center;
+    width: 100%;
+}
+.teams .center-break{
+    grid-column: 2 / 3;
+    height: 90%;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    justify-self: center;
+    align-self: center;
+}
+.conference .cards a:hover .card .card-background{
+    border: solid white 1.5px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.75);
+    transition: 0.15s;
+}
+.conference .cards .card{
+    display: grid;
+    /*grid-template-rows: 20px 40px 50px 20px ;*/
+    grid-template-rows: 10px 25px 45px 5px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+.west .cards .card{
+    grid-template-columns: 35% 30% 15% 100px;
+}
+.east .cards .card{
+    grid-template-columns: 100px 15% 30% 35%;
+}
+.teams .conference .card .card-background{
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    grid-column: 1 / -1;
+    grid-row: 2 / -2;
+    transition: 0.15s;
+    
+}
+.teams .east .cards .card .card-background{
+    /*background: linear-gradient(270deg, #000150 25%, #00001B 100%);*/
+    /*opacity: 0.1;
+    z-index: 0;*/
+    /*background: rgba(7, 7, 7, 0.1);*/
+    background: #000150A0;
+}
+.teams .east .cards .card:hover .card-background{
+    background: linear-gradient(270deg, #000150 25%, #00001B 100%);
+}
+.teams .west .cards .card .card-background{
+    background: #780000A0;
+}
+.teams .west .cards .card:hover .card-background{
+    background: linear-gradient(90deg, #780000 25%, #360000 100%);
+}
+.teams .conference .cards .card .team-name{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 0;
+    align-content: center;
+    transition: 0.1s;
+    color: white;
+    letter-spacing: 1px;
+}
+.teams .east .cards .card .team-name{
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+}
+.teams .west .cards .card .team-name{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+.teams .conference .cards .card:hover .team-name{
+    font-size: 1.55em;
+    transition: 0.15s;
+}
+.teams .conference .cards .card .rank{
+    align-content: center;
+    font-style: italic;
+    font-weight: 400;
+}
+.teams .east .cards .card .rank{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.teams .west .cards .card .rank{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+.teams .conference .cards .card .vert-break{
+    width: 1px;
+    height: 25px;
+    background-color: white;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 3 / 4;
+}
+.teams .conference .cards .card .record{
+    align-content: center;
+    font-style: italic;
+    font-weight: 400;
+}
+.teams .east .cards .card .record{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+.teams .west .cards .card .record{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.teams .conference .cards .card .points-scored-allowed{
+    align-content: center;
+    font-style: italic;
+    font-weight: 400;
+    display: grid;
+}
+.teams .east .cards .card .points-scored-allowed{
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+.teams .west .cards .card .points-scored-allowed{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.teams .conference .cards .card .points-scored-allowed p{
+    margin: 0;
+    font-size: .75em;
+}
+.teams .conference .cards .card .horiz-break{
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    justify-self: center;
+}
+.conference .cards .card .logo{
+    justify-self: center;
+    align-self: center;
+    height: 90%;
+    transition: 0.15s;
+}
+.west .cards .card .logo{
+    grid-column: -2 / -1 ;
+    grid-row: 2/ -2;
+}
+.east .cards .card .logo{
+    grid-column: 1 / 2 ;
+    grid-row: 2/ -2;
+}
+.conference .cards .card:hover .logo{
+    height: 100%;
+    transition: 0.15s;
+}

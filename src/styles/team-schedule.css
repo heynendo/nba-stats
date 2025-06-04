@@ -1,0 +1,157 @@
+.team-schedule{
+    max-width: 1400px;
+    justify-self: center;
+}
+.break{
+    width: 80%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.75);
+    justify-self: center;
+    margin: auto;
+}
+h2{
+font-family: 'Century Gothic';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+.upcoming-games{
+    justify-self: center;
+    width: 100%;
+}
+.game-cards{
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.game-cards .card{
+
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    min-width: 30%;
+    height: 70px;
+    margin: 15px;
+}
+.upcoming-games .game-cards .card > .teams{
+    height: 25px;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    display: block;
+    align-content: center;
+}
+.past-games-subheader{
+    font-family: 'Century Gothic';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+/*.upcoming-games .game-cards .card > */.date-time{
+    height: 15px;
+    font-family: 'Century Gothic';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.upcoming-games .game-cards .card > button{
+    display: block;
+    justify-self: center;
+    width: 185px;
+    height: 20px;
+    border: 0.5px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    
+
+    /* more info */
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.score-card{
+    box-sizing: border-box;
+    width: 30%;
+    min-width: 350px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+}
+.score-card span{
+    /* Lakers */
+    height: 25px;
+    min-width: 50%;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding: 2px;
+    padding-left: 1.5vw;
+}
+.score-card > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.score-card div > button{
+    /* full stats */
+    border: 0.5px solid #000000;
+    width: 70%;
+    height: 25px;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+    display: block;
+    justify-items: center;
+    align-self: center;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.score-card .pts{
+    text-align: right;
+    display: block;
+    padding: 2px;
+    padding-right: 1.5vw;
+}

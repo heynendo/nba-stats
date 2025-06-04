@@ -1,0 +1,88 @@
+.players{
+    max-width: 1600px;
+    justify-self: center;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+.players .leaders{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+.players h1{
+    color: white;
+    font-size: 2.5em;
+}
+.players .leaders span{
+    width: 100px;
+    text-align: center;
+    font-weight: 600;
+}
+.players .break{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    width: 90%;
+    margin: 20px 0;
+}
+.players .leaders .card{
+    display: grid;
+    grid-template-columns: 50px 50px 120px;
+    grid-template-rows: 25px 50px 50px;
+    margin: 20px 10px;
+}
+.players .leaders .card .card-background{
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.players .leaders .card:hover .card-background{
+    border: solid white 1.5px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.75);
+    transition: 0.25s;
+}
+.players .leaders .card:hover .player-headshot{
+    height: 99%;
+}
+.players .leaders .card .player-headshot{
+    grid-column: 1 / 3;
+    grid-row: 2 / -1;
+    height: 100%;
+    justify-content: left;
+}
+.players .leaders .card .player-name{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    color: white;
+    font-size: 0.95em;
+    margin: 0;
+    align-content: end;
+    transition: 0.5s;
+}
+.players .leaders .card:hover .player-name{
+    font-size: 1em;
+    transition: 0.5s;
+}
+.players .leaders .card .player-stat{
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+    font-size: 1.5em;
+    text-align: end;
+    padding-right: 5px;
+    color: white;
+}
+
+.players .leaders .card .games-played{
+    grid-column: 2 / -1;
+    grid-row: 3 / 4;
+    color: white;
+    text-align: end;
+    padding-right: 5px;
+    font-size: .7em;
+    font-style: italic;
+    opacity: 0.5;
+}

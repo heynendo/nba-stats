@@ -1,0 +1,161 @@
+.player .player-header{
+    width: 100%;
+}
+.player .player-header .top{
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    height: 160px;
+}
+.player .player-header .top img{
+    height: 160px;
+    justify-self: center;
+    align-self: bottom;
+    padding-left: 5vw;
+}
+.player .player-header h1{
+    font-weight: 700;
+    font-size: 64px;
+    align-content: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    height: 100%;
+}
+.player .player-header .banner{
+    height: 35px;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25), inset 0px -5px 5px rgba(0, 0, 0, 0.25);
+}
+.player-stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 25vw;
+    max-width: 1600px;
+    justify-self: center;
+    justify-content: space-between;
+}
+.player-stats div > h1{
+    margin: 50px 0;
+}
+.player-data-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    justify-self: center;
+}
+.player-data-grid > div:nth-child(odd){
+    border-right: 2px solid #D9D9D9;
+}
+.player-data-container .data-table > .college{
+    grid-column: 1 / -1;
+    text-align: center;
+    border: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.player-stats h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.25em;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.player-stats-container{
+    width: 90%;
+    justify-self: center;
+}
+.player-stats-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-self: center;
+}
+.player-stats-grid > div{
+    border-right: 2px solid #D9D9D9;
+    min-width: 125px;
+}
+.player-stats-grid > div:nth-child(4n){
+    border-right: none;
+}
+.player-stats-grid > div:nth-child(n + 5){
+    border-bottom: none;
+}
+.player-stats-grid > div > div{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin: 10px 0;
+}
+.player-stats-grid > div > div h3{
+    padding: 0;
+    margin: 0;
+}
+.player-stats-grid > div > div .light-italic{
+    padding: 0 5px;
+    margin: 0;
+    margin-bottom: 2px;
+}
+.player-scoring-container{
+    justify-self: center;
+}
+.player-scoring-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 100%;
+    /*height: 18vw;
+    width: 18vw;
+    min-height: 300px;
+    min-width: 300px;*/
+    width: 80%;
+    min-width: 300px;
+    aspect-ratio: 1 / 1;
+    justify-self: center;
+}
+.player-scoring-grid > div{
+    align-content: end;
+}
+.player-scoring-grid > div:nth-child(odd){
+    justify-items: end;
+}
+.player-scoring-grid > div:nth-child(even){
+    justify-items: start;
+}
+.player-scoring-grid > div:nth-child(odd){
+    border-right: 2px solid #D9D9D9;
+}
+.player-scoring-grid > div:nth-child(n + 3){
+    align-content: start;
+    border-bottom: none;
+}
+.player-scoring-grid  div > .light-italic{
+    padding: 5px 0;
+}
+.player-scoring-grid div:nth-child(odd) > .totals{
+    padding-right: 25px;
+}
+.player-scoring-grid div:nth-child(even) > .totals{
+    padding-left: 25px;
+}
+.player-scoring-grid div > div{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin: 10px 0;
+}
+.player-scoring-grid div:nth-child(odd) > div{
+    margin-left: 30px;
+}
+.player-scoring-grid div:nth-child(even) > div{
+    margin-right: 30px;
+}
+.player-scoring-grid div > div h3{
+    font-size: 2em;
+} 
+.player-scoring-grid div > div .light-italic{
+    padding: 0 5px;
+}

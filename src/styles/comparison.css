@@ -1,0 +1,148 @@
+.comparison{
+    display: grid;
+    grid-template-columns: 1fr 30vw 1fr;
+    justify-self: center;
+    width: 100%;
+    max-width: 1600px;
+}
+.comparison h1{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    width: 100%;
+    margin: 75px 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+.comparison .main-comparison .break-vert{
+    margin: 50px 0;
+    height: 90vh;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    justify-self: center;
+}
+.comparison .switch-button {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin-top: 8px;
+}
+.comparison .switch-button button{
+    display: block;
+    justify-self: start;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    height: 1.5em;
+    width: 120px;
+    margin: 75px 0;
+    text-align: center;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    border-left: solid white 0.5px;
+} 
+.comparison .switch-button button:hover{
+    cursor: pointer;
+    border: solid white 0.5px;
+    border-radius: 5px;
+    transition: 0.25s ease-in;
+}
+.comparison .switch-button .switch-right{
+    justify-self: end;
+    border: none;
+    border-right: solid white 0.5px;
+}
+.comparison .picked > img{
+    display: block;
+    width: 75%;
+    justify-self: center;
+}
+.comparison .search form{
+    justify-self: center;
+    width: 80%;
+}
+.comparison .search form input{
+    width: 100%;
+    justify-self: center;
+    padding-left: 25px;
+    background: none;
+    border: none;
+    border-bottom: solid white 1px;
+    height: 30px;
+    color: white;
+}
+.comparison .search form input:focus{
+    outline: none;
+}
+.comparison .search .comparison-option{
+    display: block;
+    width: 80%;
+    justify-self: center;
+    margin-bottom: 50px;
+}
+.comparison .search .card{
+    border: none;
+    width: 100%;
+    background: none;
+    border-bottom: solid #ffffffa0 1px;
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+}
+.comparison .search .card:hover{
+    cursor: pointer;
+    background-color: #FFFFFF10;
+    transition: 0.2s ease-in;
+}
+.comparison .search .card .card-logo{
+    height: 75%;
+    align-self: center;
+}
+.comparison .search .card .card-name{
+    color: white;
+    opacity: .75;
+    padding-left: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    height: 100%;
+    align-content: center;
+}
+.comparison-table{
+    border-collapse: collapse;
+    /*width: 450px;*/
+    width: 100%;
+    margin-top: 75px;
+    justify-self: center;
+}
+.comparison-table .center{
+    width: 155px;
+}
+.comparison-table tr{
+    border-bottom: solid white 2px;
+}
+/*.comparison-table tr:hover .center{
+    background-color: #FFFFFF05;
+    transition: 0.2s ease-in;
+}
+.comparison-table tr:hover .left{
+    background-color: #FFFFFF05;
+    transition: 0.2s ease-in;
+}
+.comparison-table tr:hover .right{
+    background-color: #FFFFFF05;
+    transition: 0.2s ease-in;
+}*/
+.comparison-table td{
+    width: 145px;
+    height: 50px;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    text-align: center;
+}
