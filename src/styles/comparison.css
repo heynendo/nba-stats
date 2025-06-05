@@ -4,6 +4,7 @@
     justify-self: center;
     width: 100%;
     max-width: 1600px;
+    min-height: 800px;
 }
 .comparison h1{
     font-family: 'Century Gothic';
@@ -17,7 +18,7 @@
 }
 .comparison .main-comparison .break-vert{
     margin: 50px 0;
-    height: 90vh;
+    height: 70vh;
     width: 1px;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
