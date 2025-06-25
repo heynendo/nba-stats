@@ -18,7 +18,7 @@ function Home(){
             <div className="right">
                 <div className="background"></div>
                 <div className="body">
-                    <h3>Created by Donovan Heynen</h3>
+                    <h3>Created by <a target="_blank" href="https://www.donovanheynen.com/">Donovan Heynen</a></h3>
                     <Link to="/players">
                         <h2>See Players</h2>
                     </Link>
