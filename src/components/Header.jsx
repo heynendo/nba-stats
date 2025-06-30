@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import playerData from '../data/playerData.json'
 import teamData from '../data/teamData.json'
@@ -7,9 +7,24 @@ import SearchBar from "./SearchBar"
 import SearchResults from "./SearchResults"
 
 export default function Header() {
-    const [search, setSearch] = React.useState('')
-    const [playersReturned, setPlayersReturned] = React.useState([])
-    const [teamsReturned, setTeamsReturned] = React.useState([])
+    const [search, setSearch] = useState('')
+    const [playersReturned, setPlayersReturned] = useState([])
+    const [teamsReturned, setTeamsReturned] = useState([])
+    const [toggleDropdown, setToggleDropdown] = useState(false)
+
+    React.useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 1000) {
+                setToggleDropdown(false)
+            }
+        }
+        handleResize()
+        window.addEventListener('resize', handleResize)
+
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
 
     const allPlayers = playerData.flatMap(team => Object.values(team).flat())
 
@@ -128,17 +143,33 @@ export default function Header() {
                             setSearch={setSearch}
                         />
                     </div>
-                    <div className="links">
+                    <div className="links lg">
                         <Link to="/players"><h3>Players</h3></Link>
                         <Link to="/teams"><h3>Teams</h3></Link>
                         <Link to="/team-comparisons"><h3>Team Comparisons</h3></Link>
                         <Link to="/player-comparisons"><h3>Player Comparisons</h3></Link>
                     </div>
+                    <div className="links sm">
+                        <img 
+                            src="src/images/hamburger-menu.png"
+                            onClick={() => setToggleDropdown(prevToggle => !prevToggle)}
+                        />
+                    </div>
                 </nav>
-                <SearchResults 
-                    playersReturned={playersReturned}
-                    teamsReturned={teamsReturned}
-                />
+                <div className="container">
+                    <SearchResults
+                        playersReturned={playersReturned}
+                        teamsReturned={teamsReturned}
+                    />
+                    {toggleDropdown  ? 
+                    <div className="dropdown">
+                        <Link to="/players"><h3>Players</h3></Link>
+                        <Link to="/teams"><h3>Teams</h3></Link>
+                        <Link to="/team-comparisons"><h3>Team Comparisons</h3></Link>
+                        <Link to="/player-comparisons"><h3>Player Comparisons</h3></Link>
+                    </div>
+                    : ''}
+                </div>
             </header>
         </>
     )

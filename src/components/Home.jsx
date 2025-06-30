@@ -35,6 +35,10 @@ function Home(){
                     </Link>
                 </div>
             </div>
+            <div className="dev-info">
+                <div className="background"></div>
+                <p>This project is currently not supported for mobile devices. Updates to come in the future include full mobile support, live updating backend, and more.</p>
+            </div>
         </div>
     )
 }
