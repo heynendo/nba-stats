@@ -5,6 +5,7 @@ import teamData from '../data/teamData.json'
 import '../styles/header.css'
 import SearchBar from "./SearchBar"
 import SearchResults from "./SearchResults"
+import hamburgerIcom from '../images/hamburger-menu.png';
 
 export default function Header() {
     const [search, setSearch] = useState('')
@@ -151,7 +152,7 @@ export default function Header() {
                     </div>
                     <div className="links sm">
                         <img 
-                            src="src/images/hamburger-menu.png"
+                            src={hamburgerIcom}
                             onClick={() => setToggleDropdown(prevToggle => !prevToggle)}
                         />
                     </div>
